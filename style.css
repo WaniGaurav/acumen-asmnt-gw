@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --clr-primary : #060505;
+}
+body {
+    font-family: Poppins, Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* background-color: #0b0b0b; */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.wrapper-btn-mode{
+    display: flex;
+    justify-content: right;
+}
+.heading {
+    color: var(--clr-primary);
+    text-align: center;
+}
+.dark{
+    cursor: pointer;
+    height:3rem;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size:0.8rem;
+    border-radius: 8px;
+    color: #f2f2f2;
+    background: #6d0ab4;
+    padding: 0.6rem;
+    text-align:right;
+    transition-duration: .15s;
+}
+.dark:hover{
+    color: #f2f2f2;
+    background: rgb(219, 57, 45);
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#searchBox {
+    width: min(100%, 300px);
+    padding: 10px;
+    font-size: 16px;
+}
+
+#searchBtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+}
+.searchImgResult {  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgInfo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #02020283;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgInfo a {
+    color: #f4fb38;
+    text-decoration: none;
+}
+
+.imgInfo a:hover {
+    text-decoration: underline;
+}
+
+.imgInfoFlx{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.img-description{
+    text-align: justify;
+    display: block;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.img-description abbr{
+    font-weight: bold;
+    color: #93e23f;
+}
+
+.profileImg{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 48px;
+}
+.img-profile-link{
+    text-align: center;
+}
