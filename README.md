@@ -61,7 +61,6 @@
   </table>
 </p>
 
-Challenge was to create **_Portfolio_** following the design given on the website. The page should be responsive.
 
 ### Built With
 

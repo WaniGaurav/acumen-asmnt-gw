@@ -31,11 +31,12 @@ let lightMode = () => {
 document.getElementById('searchBtn').addEventListener('click', () => {
     const imgSearchName = document.getElementById('searchBox').value.trim();
     if (imgSearchName) {
-        fetchPictures(imgSearchName);
+        apiPicturesfetch(imgSearchName);
     }
 });
 
-async function fetchPictures(imgSearchName) {
+// Api Fetching call
+async function apiPicturesfetch(imgSearchName) {
     
     const apiKey = 'zb-7pZGsHmlfIit1OCNGRPjVOH8dUp2Cyi61g-d5k2g'; // Unsplash API key
     const url = `https://api.unsplash.com/search/photos?query=${imgSearchName}&client_id=${apiKey}&per_page=15`;
@@ -49,7 +50,9 @@ async function fetchPictures(imgSearchName) {
         alert('Error fetching images:', error);
     }
 }
+// Api feching End
 
+// Images display dynamically
 let apiPicturesDisplay = (images) => {
     const gallery = document.getElementById('gallery');
     gallery.innerHTML = '';
@@ -77,7 +80,7 @@ let apiPicturesDisplay = (images) => {
                 </div>
             `;
                 
-                // <div class="img-profile-link"><a href="${img.links.html}" target="_blank">View on Unsplash</a></div>
         gallery.appendChild(galleryImgs);
     });
 }
+// Images display dynamically end
