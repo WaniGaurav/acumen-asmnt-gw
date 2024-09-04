@@ -30,12 +30,12 @@
   <b>Dark View</b>
   <table>
     <tr>
-      <th>Laptop View</th>
+      <th>Desktop View</th>
       <th>Mobile View</th>
     </tr>
     <tr>
       <td>
-        <img src = "/images/desktop-view-dark.png">
+        <img src = "/images/deskop-view-dark.png">
       </td>
       <td>
         <img src = "/images/mobile-view-dark.png">
@@ -47,12 +47,12 @@
   <b>Light View</b>
   <table>
     <tr>
-      <th>Laptop View</th>
+      <th>Desktop View</th>
       <th>Mobile View</th>
     </tr>
     <tr>
       <td>
-        <img src = "/images/desktop-view-light.png">
+        <img src = "/images/deskop-view-light.png">
       </td>
       <td>
         <img src = "/images/mobile-view-light.png">
