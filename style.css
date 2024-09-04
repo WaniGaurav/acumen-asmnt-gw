@@ -4,11 +4,11 @@
     padding: 0;
 }
 :root{
-    --clr-primary : #060505;
+    --clr-primary : #f4f4f4;
 }
 body {
     font-family: Poppins, Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #060505;
     /* background-color: #0b0b0b; */
 }
 
@@ -49,16 +49,24 @@ body {
 }
 
 #searchBox {
-    width: min(100%, 300px);
+    font-family: Poppins;
+    width: min(100%, 330px);
     padding: 10px;
     font-size: 16px;
+    border: 2px solid sandybrown;
+    border-radius: 18px;
 }
 
 #searchBtn {
+    font-family: Poppins;
     padding: 10px 20px;
     font-size: 1rem;
     margin-left: 10px;
     cursor: pointer;
+    border: 0;
+    border-radius: 18px;
+    color: #db2b1b;
+    background-color: #1ed2c6;
 }
 
 .gallery {

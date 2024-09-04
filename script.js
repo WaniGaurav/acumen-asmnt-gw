@@ -1,6 +1,6 @@
-let a = true;
+let a = false;
 let btn = document.getElementById("btn-chng-mode");
-btn.innerHTML = "Dark Mode";
+btn.innerHTML = "Light Mode";
 btn.addEventListener("click", function (e) {
   e.preventDefault;
   if (a) {
@@ -44,13 +44,13 @@ async function fetchPictures(imgSearchName) {
         const response = await fetch(url);
         const data = await response.json();
         // console.log(data.results);
-        displayPictures(data.results);
+        apiPicturesDisplay(data.results);
     } catch (error) {
         alert('Error fetching images:', error);
     }
 }
 
-let displayPictures = (images) => {
+let apiPicturesDisplay = (images) => {
     const gallery = document.getElementById('gallery');
     gallery.innerHTML = '';
 
