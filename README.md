@@ -4,7 +4,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://portfolio-devch-gw.netlify.app/">
+    <a href="https://picture-gallery-gw.netlify.app/">
       Demo
     </a>
     <span> | </span>
@@ -71,7 +71,7 @@
 - JavaScript
 - Netlify
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/601be770-739e-4b14-8239-d4309ce66232/deploy-status)](https://app.netlify.com/sites/portfolio-devch-gw/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/91b768d2-4eb9-4143-891f-209b246d7fb9/deploy-status)](https://app.netlify.com/sites/picture-gallery-gw/deploys)
 
 ## Contact
 
